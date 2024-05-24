@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Intro to Javascript </title>
+		<script>
+				function convertFahrenheit()
+				{
+					var num1=document.getElementById ("fnum1").value * 1.0;
+					document.getElementById("result").innerHTML = (num1 -32) * 0.55555 ;
+				}
+		</script>
+	</head>
+<body>
+		<h1 id="myheading">
+			For you stupid americans:
+		</h1>
+	<p>
+		<form>
+			<label for="fnum1">Fahrenheit:</label>
+			<input type="text" id="fnum1" name="fnum1"><br><br>
+		</form>
+	</p>		
+		<button onclick="convertFahrenheit()">
+				Celsius
+		</button>
+		<p id="result" >
+		</p>
+	</body>
+</html>
